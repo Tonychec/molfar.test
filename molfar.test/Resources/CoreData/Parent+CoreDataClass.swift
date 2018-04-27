@@ -12,5 +12,7 @@ import CoreData
 
 @objc(Parent)
 public class Parent: NSManagedObject {
-
+    convenience init() {
+        self.init(entity: CoreDataManager.instance.entityForName(entityName: "Parent"), insertInto: CoreDataManager.instance.getManagedContext())
+    }
 }

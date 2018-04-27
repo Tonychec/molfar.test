@@ -22,28 +22,28 @@ class ChildsTableViewController: UITableViewController {
             print(error)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
-    }
     
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 0
+        if let sections = fetchResultsController.sections {
+            return sections[section].numberOfObjects
+        } else {
+            return 0
+        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let child = fetchResultsController.object(at: indexPath) as! Child
+        let cell = UITableViewCell()
+        cell.textLabel?.text = child.id
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let child = fetchResultsController.object(at: indexPath) as? Child
-        performSegue(withIdentifier: "mainToChild", sender: child)
+        performSegue(withIdentifier: "childsToChild", sender: child)
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -55,9 +55,23 @@ class ChildsTableViewController: UITableViewController {
     }
     
     // MARK: - Actions
+    @IBAction func genPressed(_ sender: Any) {
+        background {
+            var tmpArr = [Child]()
+            for index in 0...1000 {
+                let child = Child()
+                let randomNumber = arc4random_uniform(1000)
+                child.id = "\(index) - index,\(randomNumber)"
+                tmpArr.append(child)
+            }
+            main {
+                CoreDataManager.instance.saveContext()
+            }
+        }
+    }
     
     @IBAction func addPressed(_ sender: Any) {
-        performSegue(withIdentifier: "mainToChild", sender: nil)
+        performSegue(withIdentifier: "childsToChild", sender: nil)
     }
 }
 
@@ -65,8 +79,8 @@ class ChildsTableViewController: UITableViewController {
 
 extension ChildsTableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "mainToChild" {
-            let controller = segue.destination // as! CustomerViewController
+        if segue.identifier == "childsToChild" {
+            let controller = segue.destination as! ChildViewController
             controller.child = sender as? Child
         }
     }
@@ -102,5 +116,9 @@ extension ChildsTableViewController: NSFetchedResultsControllerDelegate {
                 tableView.deleteRows(at: [indexPath as IndexPath], with: .automatic)
             }
         }
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
     }
 }

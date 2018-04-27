@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		C270C8B12092F4B700CDBCCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8B02092F4B700CDBCCC /* AppDelegate.swift */; };
-		C270C8B32092F4B700CDBCCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8B22092F4B700CDBCCC /* ViewController.swift */; };
-		C270C8B62092F4B700CDBCCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C270C8B42092F4B700CDBCCC /* Main.storyboard */; };
 		C270C8B92092F4B700CDBCCC /* molfar_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C270C8B72092F4B700CDBCCC /* molfar_test.xcdatamodeld */; };
 		C270C8BB2092F4B800CDBCCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C270C8BA2092F4B800CDBCCC /* Assets.xcassets */; };
 		C270C8BE2092F4B800CDBCCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C270C8BC2092F4B800CDBCCC /* LaunchScreen.storyboard */; };
+		C270C8C92092F65800CDBCCC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8C82092F65800CDBCCC /* CoreDataManager.swift */; };
+		C270C8D82092FAB200CDBCCC /* ChildsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8D72092FAB200CDBCCC /* ChildsTableViewController.swift */; };
+		C270C8DA2092FB0500CDBCCC /* ChildsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C270C8D92092FB0500CDBCCC /* ChildsTableViewController.storyboard */; };
+		C270C8DC2092FD7E00CDBCCC /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8DB2092FD7E00CDBCCC /* ChildViewController.swift */; };
+		C270C8E62093066B00CDBCCC /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8E52093066B00CDBCCC /* Thread.swift */; };
+		C270C8F320930BF800CDBCCC /* Parent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8EF20930BF800CDBCCC /* Parent+CoreDataClass.swift */; };
+		C270C8F420930BF800CDBCCC /* Parent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8F020930BF800CDBCCC /* Parent+CoreDataProperties.swift */; };
+		C270C8F520930BF800CDBCCC /* Child+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8F120930BF800CDBCCC /* Child+CoreDataClass.swift */; };
+		C270C8F620930BF800CDBCCC /* Child+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270C8F220930BF800CDBCCC /* Child+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C270C8AD2092F4B700CDBCCC /* molfar.test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = molfar.test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C270C8B02092F4B700CDBCCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C270C8B22092F4B700CDBCCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C270C8B52092F4B700CDBCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C270C8B82092F4B700CDBCCC /* molfar_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = molfar_test.xcdatamodel; sourceTree = "<group>"; };
 		C270C8BA2092F4B800CDBCCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C270C8BD2092F4B800CDBCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C270C8BF2092F4B800CDBCCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C270C8C82092F65800CDBCCC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C270C8D72092FAB200CDBCCC /* ChildsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildsTableViewController.swift; sourceTree = "<group>"; };
+		C270C8D92092FB0500CDBCCC /* ChildsTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChildsTableViewController.storyboard; sourceTree = "<group>"; };
+		C270C8DB2092FD7E00CDBCCC /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		C270C8E52093066B00CDBCCC /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		C270C8EF20930BF800CDBCCC /* Parent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C270C8F020930BF800CDBCCC /* Parent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C270C8F120930BF800CDBCCC /* Child+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C270C8F220930BF800CDBCCC /* Child+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,54 @@
 		C270C8AF2092F4B700CDBCCC /* molfar.test */ = {
 			isa = PBXGroup;
 			children = (
+				C270C8D22092F73600CDBCCC /* View */,
+				C270C8C62092F4ED00CDBCCC /* Resources */,
+				C270C8C52092F4C700CDBCCC /* Sourse */,
+			);
+			path = molfar.test;
+			sourceTree = "<group>";
+		};
+		C270C8C52092F4C700CDBCCC /* Sourse */ = {
+			isa = PBXGroup;
+			children = (
 				C270C8B02092F4B700CDBCCC /* AppDelegate.swift */,
-				C270C8B22092F4B700CDBCCC /* ViewController.swift */,
-				C270C8B42092F4B700CDBCCC /* Main.storyboard */,
 				C270C8BA2092F4B800CDBCCC /* Assets.xcassets */,
 				C270C8BC2092F4B800CDBCCC /* LaunchScreen.storyboard */,
 				C270C8BF2092F4B800CDBCCC /* Info.plist */,
 				C270C8B72092F4B700CDBCCC /* molfar_test.xcdatamodeld */,
 			);
-			path = molfar.test;
+			path = Sourse;
+			sourceTree = "<group>";
+		};
+		C270C8C62092F4ED00CDBCCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C270C8E52093066B00CDBCCC /* Thread.swift */,
+				C270C8C72092F5FA00CDBCCC /* CoreData */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C270C8C72092F5FA00CDBCCC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C270C8C82092F65800CDBCCC /* CoreDataManager.swift */,
+				C270C8EF20930BF800CDBCCC /* Parent+CoreDataClass.swift */,
+				C270C8F020930BF800CDBCCC /* Parent+CoreDataProperties.swift */,
+				C270C8F120930BF800CDBCCC /* Child+CoreDataClass.swift */,
+				C270C8F220930BF800CDBCCC /* Child+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C270C8D22092F73600CDBCCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C270C8D72092FAB200CDBCCC /* ChildsTableViewController.swift */,
+				C270C8D92092FB0500CDBCCC /* ChildsTableViewController.storyboard */,
+				C270C8DB2092FD7E00CDBCCC /* ChildViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +180,7 @@
 			files = (
 				C270C8BE2092F4B800CDBCCC /* LaunchScreen.storyboard in Resources */,
 				C270C8BB2092F4B800CDBCCC /* Assets.xcassets in Resources */,
-				C270C8B62092F4B700CDBCCC /* Main.storyboard in Resources */,
+				C270C8DA2092FB0500CDBCCC /* ChildsTableViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +191,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C270C8B32092F4B700CDBCCC /* ViewController.swift in Sources */,
+				C270C8E62093066B00CDBCCC /* Thread.swift in Sources */,
 				C270C8B92092F4B700CDBCCC /* molfar_test.xcdatamodeld in Sources */,
+				C270C8DC2092FD7E00CDBCCC /* ChildViewController.swift in Sources */,
+				C270C8F520930BF800CDBCCC /* Child+CoreDataClass.swift in Sources */,
+				C270C8F620930BF800CDBCCC /* Child+CoreDataProperties.swift in Sources */,
+				C270C8F320930BF800CDBCCC /* Parent+CoreDataClass.swift in Sources */,
+				C270C8D82092FAB200CDBCCC /* ChildsTableViewController.swift in Sources */,
+				C270C8C92092F65800CDBCCC /* CoreDataManager.swift in Sources */,
 				C270C8B12092F4B700CDBCCC /* AppDelegate.swift in Sources */,
+				C270C8F420930BF800CDBCCC /* Parent+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C270C8B42092F4B700CDBCCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C270C8B52092F4B700CDBCCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C270C8BC2092F4B800CDBCCC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E499WX8J48;
-				INFOPLIST_FILE = molfar.test/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/molfar.test/Sourse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E499WX8J48;
-				INFOPLIST_FILE = molfar.test/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/molfar.test/Sourse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
